@@ -131,7 +131,7 @@ function set_auth_cookie(user, domain)
         "SSOwAuthHash="..hash..cookie_str,
         "SSOwAuthExpire="..expire..cookie_str
     }
-    log("Hash "..hash.." generated for "..user.."@"..ngx.var.remote_addr)
+    log("Hash "..hash.." generated for "..user.."@"..ngx.var.remote_addr.." ("..domain..")")
 end
 
 
